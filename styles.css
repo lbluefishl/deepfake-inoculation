@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: Arial, sans-serif;
+
+}
+
+
+div {
+  text-align: center;
+  padding: 1px;
+}
+
+.instructions {
+  margin-top: 10px;
+}
+
+#instructionText {
+  font-size: 1em;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 1.5em;
+  padding-bottom: 1em;
+  display: block;
+  margin: auto;
+}
+
+
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+  border: 1px solid #3d3d3d;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: #726f6f;
+  color: white;
+  width: 100px;
+}
+
+button {
+  background-color: #d4d4d4;
+  border: none;
+
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.question {
+  margin-bottom: 2px;
+}
+
+.radio-group input {
+  margin-right: 1px;
+}

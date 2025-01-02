@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Page</title>
+    <link rel="icon" href="images/shortcut.png">
+    <script src="survey.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+
+    <div class="container" style="background-color: white;">
+
+        <div class="video-container" data-video="v9">
+            <video id="v9" src="videos/t1.mp4" controls></video>
+           
+           
+            <div class="side-panel">
+                <p>Answer the following questions about the last video. If you like, you can watch it again. </p>
+                <hr> 
+                <form id="targetForm">
+
+                    <div class="question">
+                    <label for="enjoyability">How enjoyable is this video?</label>
+                    <div class="radio-group">
+                    <input type="radio" name="enjoyability" value="0" required>Not Enjoyable
+                    <input type="radio" name="enjoyability" value="1">Somewhat Enjoyable
+                    <input type="radio" name="enjoyability" value="2">Very Enjoyable
+                    </div>
+                    </div>  
+        
+                    <div class="question">
+                    <label for="funny">How funny is this video?</label>
+                    <div class="radio-group">
+                        <input type="radio" name="sex" value="0" required>Not Funny
+                        <input type="radio" name="sex" value="1">Somewhat Funny
+                        <input type="radio" name="sex" value="2">Very Funny
+                    </div>   
+                </div>
+              <div class="question">
+                    <label for="handedness">How believable is this video?</label>
+                    <div class="radio-group">
+                        <input type="radio" name="handedness" value="0" required> Not believable
+                        <input type="radio" name="handedness" value="1"> Somewhat believable
+                        <input type="radio" name="handedness" value="2"> Very believable
+                    </div>
+                </div>
+                <div class="question">
+                    <label for="previouslySeen">Have you seen this video before?</label>
+                    <div class="radio-group">
+                        <input type="radio" name="previouslySeen" value="1" required> Yes
+                        <input type="radio" name="previouslySeen" value="0"> No
+                    </div>
+                </div>
+
+                    <hr> 
+
+        <div style="text-align: center;">
+
+            <button type="continue">Continue</button>
+        </div>
+                   
+                </form>
+            </div>
+
+          </div>
+          
+          </div>     
+
+
+
+    </div>
+
+
+    </body>
+
+    </html>
+
+
+

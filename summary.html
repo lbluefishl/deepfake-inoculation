@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summary Page</title>
+  <link rel="icon" href="images/shortcut.png">
+  <script src="summary.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    form {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    select,
+
+    textarea,
+    button {
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    div {
+      margin: 10px;
+    }
+
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin: 10px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      margin: auto;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .radio-group {
+
+      flex-direction: column;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+
+  <body>
+    <h1 style="text-align: center;">Survey </h1>
+    <form id="surveyForm">
+      <label for="age">What is your age in years?</label>
+      <div class="radio-group"><input type="number" id="age" name="age" required placeholder="Enter your age"></div>
+
+
+
+      <label for="sex">What sex were you assigned at birth?</label>
+      <div class="radio-group">
+        <input type="radio" name="sex" value="0" required>Female</option>
+        <input type="radio" name="sex" value="1">Male</option>
+        <input type="radio" name="sex" value="2">Other</option>
+      </div>
+
+
+
+
+      <label for="handedness">Which hand do you normally write with?</label>
+      <div class="radio-group">
+        <input type="radio" name="handedness" value="left" required> Left
+        <input type="radio" name="handedness" value="right"> Right
+        <input type="radio" name="handedness" value="both"> Both equally
+      </div>
+      <hr>
+
+      <h3> On a typical day, how often do you...?</h3>
+      <table>
+        <tr>
+          <td><label for="digitalDeviceHours">Use any digital devices (smartphone, tablet, computer) for any
+              purpose</label></td>
+          <td>
+            <select name="digitalDeviceHours" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="lessThan1">Less than 1 hour</option>
+              <option value="1to2">1-2 hours</option>
+              <option value="3to4">3-4 hours</option>
+              <option value="5plus">5+ hours</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="smartphoneHours">Use smartphones for any purpose</label></td>
+          <td>
+            <select name="smartphoneHours" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="lessThan1">Less than 1 hour</option>
+              <option value="1to2">1-2 hours</option>
+              <option value="3to4">3-4 hours</option>
+              <option value="5plus">5+ hours</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="shortFormVideoHours">Watch short form videos (TikTok, YouTube Shorts, Instagram Reels)</label>
+          </td>
+          <td>
+            <select name="shortFormVideoHours" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="lessThan1">Less than 1 hour</option>
+              <option value="1to2">1-2 hours</option>
+              <option value="3to4">3-4 hours</option>
+              <option value="5plus">5+ hours</option>
+            </select>
+          </td>
+        </tr>
+
+      </table>
+      <hr>
+
+      <label for="studyFamiliarity">Have you previously completed an idea generation task similar to the one in this study?</label>
+      <select name="studyFamiliarity" required>
+        <option value="" disabled selected>Select the closest option</option>
+        <option value="notFamiliar">Have not done this task before</option>
+        <option value="somewhatFamiliar">Have done a similar task before</option>
+        <option value="veryFamiliar">Have done the exact task before</option>
+      </select>
+
+
+      <label for="comments">Do you have any comments or feedback for the study? Please describe any technical issues,
+        annoyances, or unique experiences, if any.</label>
+      <textarea id="comments" name="comments"></textarea>
+
+
+
+      <p>Please press submit to complete the study to obtain credit for Prolific.</p>
+
+      <button type="submit">Submit</button>
+    </form>
+
+
+  </body>
+
+  </html>
+
+
+
